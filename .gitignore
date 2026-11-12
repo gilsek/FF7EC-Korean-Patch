@@ -1,0 +1,25 @@
+# secrets: GalTransl configs hold the real gateway key
+**/config.yaml
+**/config.runtime.yaml
+**/.env
+# large / derived / extracted data
+work/
+backup/
+fonts/
+review_bk_watermelon/
+**/transl_cache/
+**/review/_*backup/
+**/*.bak
+**/*.log
+**/bin/
+**/obj/
+tools/cpp2il/
+__pycache__/
+*.pyc
+**/_*backup/
+**/*_backup/
+.claude/
+**/config.yaml*
+**/*.bak*
+# distribution builds
+dist/

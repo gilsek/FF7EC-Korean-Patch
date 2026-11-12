@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!-- 플러그인과 같은 치환 코드를 그대로 컴파일한다 (BepInEx/게임 의존 없음). -->
+  <ItemGroup>
+    <Compile Include="..\StoryKo\StoryKoReplacer.cs" Link="StoryKoReplacer.cs" />
+  </ItemGroup>
+
+</Project>

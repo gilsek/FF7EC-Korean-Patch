@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>FontPatch</AssemblyName>
+    <RootNamespace>FontPatch</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <ApplicationIcon>ff7ec.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AssetsTools.NET" Version="3.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classdata.tpk" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
