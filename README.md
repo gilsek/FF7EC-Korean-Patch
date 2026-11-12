@@ -1,17 +1,30 @@
 # FINAL FANTASY VII EVER CRISIS 한글패치
 
 스토리 대사, 시스템 UI, 무비 자막을 한국어로 바꿔 주는 **비공식 팬 패치**입니다.
-공식 서비스가 끝난 뒤 오프라인 서버(NeverCrisis) 환경에서 플레이하는 것을 전제로 만들었습니다.
+공식 서비스가 끝난 뒤 팬 오프라인 서버 **[NeverCrisis](https://github.com/ShadowMPo/NeverCrisis)** 환경에서 플레이하는 것을 전제로 만들었습니다.
 
 ## 준비물
 - Steam으로 설치한 FINAL FANTASY VII EVER CRISIS
   (기본 위치: `C:\Program Files (x86)\Steam\steamapps\common\FF7EC`)
-- 게임 폴더에 오프라인 서버(`FF7ECServer.exe`, `FF7ECServer.pak`)가 이미 설치되어 있고,
-  **한글패치 없이도 게임이 실행되는 상태**. 오프라인 서버는 이 패치에 들어 있지 않습니다.
+- 게임 폴더에 오프라인 서버 **[NeverCrisis](https://github.com/ShadowMPo/NeverCrisis)**(`FF7ECServer.exe`, `FF7ECServer.pak`)가 이미 설치되어 있고,
+  **한글패치 없이도 게임이 실행되는 상태**. 오프라인 서버는 이 패치에 들어 있지 않으니 따로 받아야 합니다.
 - Windows 10/11 64비트, .NET Framework 4.8 (Windows 10/11에 기본 포함)
 - 첫 실행 때만 인터넷 연결 (BepInEx가 Unity 기본 라이브러리를 내려받습니다)
 
 > 설치 전에 게임 폴더(특히 세이브)를 백업해 두기를 권장합니다.
+
+## 오프라인 서버 설치 (NeverCrisis)
+한글패치보다 먼저 서버를 설치하세요. 자세한 내용은 [NeverCrisis 저장소](https://github.com/ShadowMPo/NeverCrisis)의 안내를 따르세요.
+1. [NeverCrisis Releases](https://github.com/ShadowMPo/NeverCrisis/releases/latest)에서 서버 패키지를 내려받습니다.
+2. 게임 폴더에 그대로 풉니다.
+3. `FF7ECServer.exe`를 실행해 **한글패치 없이** 게임이 정상적으로 실행되는지 먼저 확인합니다.
+   - 실행할 때마다 hosts 파일을 고치느라 관리자 권한을 요청합니다.
+   - 443 포트가 비어 있어야 합니다.
+   - `octo` 폴더에 없는 게임 파일은 Square Enix 일본 파일 서버에서 내려받습니다.
+4. 정상 실행을 확인했으면 게임을 끄고 아래 한글패치 설치로 넘어갑니다.
+   한글패치를 설치한 뒤에는 `FF7ECServer.exe` 대신 `FF7EC_KO.exe`로 실행합니다. `FF7EC_KO.exe`가 서버를 대신 띄워 줍니다.
+
+서버 자체의 문제(접속, 세이브, 아이템 등)는 한글패치가 아니라 NeverCrisis 쪽 [Issues](https://github.com/ShadowMPo/NeverCrisis/issues)에 문의하세요.
 
 ## 설치
 1. [Releases](../../releases/latest)에서 `FF7EC_KO_v1.0.zip`을 내려받습니다.
@@ -95,6 +108,7 @@
 - [XUnity.AutoTranslator](https://github.com/bbepis/XUnity.AutoTranslator) (MIT)
 - [AssetsTools.NET](https://github.com/nesrak1/AssetsTools.NET) (MIT)
 - [Pretendard](https://github.com/orioncactus/pretendard) (SIL OFL 1.1)
+- 오프라인 서버: [NeverCrisis](https://github.com/ShadowMPo/NeverCrisis) (별도 배포, 이 패치에 포함되지 않음)
 - 번역 초벌: [GalTransl](https://github.com/xd2333/GalTransl) + DeepSeek, 검수와 다듬기는 사람과 AI가 함께 했습니다.
 
 ## 주의
